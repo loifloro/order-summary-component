@@ -1,0 +1,132 @@
+@import 'config';
+
+body {
+    background: $primary-color-1;
+}
+
+.container {
+    width: 50vh;
+    border-radius: 1.5rem ;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50%);
+    background: #fff;
+    box-shadow: .5rem .5rem 3rem rgba(181, 181, 181, 0.448);
+
+
+    &__img {
+        display: block;
+        border-radius: 1.5rem 1.5rem 0 0;
+        width: inherit;
+    }
+
+    .summary {
+        margin: 3rem 1.5rem;
+        text-align: center;
+
+        &__title {
+            font-weight: 900;
+            color: $text-1;
+        }
+
+        &__info {
+            font-weight: 500;
+            font-size: $text-paragraph;
+            color: $text-2;
+        }
+        .info {
+            display: flex;
+            padding: 1rem .2rem;
+            justify-content: space-between;
+            align-items: center;
+            background: $text-3;
+            border-radius: .5rem;
+    
+            .right {
+                display: flex;
+                flex-direction: row;
+    
+                // .info
+                
+                .info__title {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-evenly;
+                    margin-left: 1rem;
+        
+                    .title {
+                        font-weight: 900;
+                        color: $text-1;
+                    }
+        
+                    .year {
+                        color: $text-2;
+                    }
+                }
+            }
+            
+    
+            &__btn {
+                color: $primary-color-2;
+                font-weight: 700;
+                text-decoration: underline;
+                transition: all 900ms ease-in-out;
+                
+                &:hover {
+                    text-decoration: none;
+                    cursor: pointer;
+                }
+            }
+        }
+    
+        .info > * {
+            margin: 0 1rem;
+        }
+
+        .btn {
+            margin: 1.5rem 0;
+
+            &__primary {
+                font-weight: 700;
+                font-size: $text-paragraph;
+                color: $text-3;
+                background: $primary-color-2;
+                padding: .8rem;
+                border-radius: .5rem;
+                box-shadow: .5rem .5rem 3rem rgba(181, 181, 181, 0.783);
+                transition: 900ms ease-in;
+
+                &:hover {
+                    background: lighten($color: $primary-color-2 , $amount: 20);
+                    cursor: pointer;
+                }
+            
+            }
+
+            &__cancel {
+                margin-top: 1rem;
+                font-weight: 800;
+                color: $text-2;
+                transition: all 900ms ease-in;
+
+                &:hover {
+                    cursor: pointer;
+                    color: $text-1;
+                }
+            }
+        }
+    }
+}
+
+footer {
+    position: absolute;
+    bottom: 1rem;
+    text-align: end;
+    font-size: 11px;
+
+    a {
+        color: hsl(228, 45%, 44%);
+    }
+}
+

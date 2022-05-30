@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+* {
+  font-family: "Red Hat Display";
+}
+
+body {
+  background: hsl(225deg, 100%, 94%);
+}
+
+.container {
+  width: 50vh;
+  border-radius: 1.5rem;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  box-shadow: 0.5rem 0.5rem 3rem rgba(181, 181, 181, 0.448);
+}
+.container__img {
+  display: block;
+  border-radius: 1.5rem 1.5rem 0 0;
+  width: inherit;
+}
+.container .summary {
+  margin: 3rem 1.5rem;
+  text-align: center;
+}
+.container .summary__title {
+  font-weight: 900;
+  color: hsl(223deg, 47%, 23%);
+}
+.container .summary__info {
+  font-weight: 500;
+  font-size: 16px;
+  color: hsl(224deg, 23%, 55%);
+}
+.container .summary .info {
+  display: flex;
+  padding: 1rem 0.2rem;
+  justify-content: space-between;
+  align-items: center;
+  background: hsl(225deg, 100%, 98%);
+  border-radius: 0.5rem;
+}
+.container .summary .info .right {
+  display: flex;
+  flex-direction: row;
+}
+.container .summary .info .right .info__title {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-left: 1rem;
+}
+.container .summary .info .right .info__title .title {
+  font-weight: 900;
+  color: hsl(223deg, 47%, 23%);
+}
+.container .summary .info .right .info__title .year {
+  color: hsl(224deg, 23%, 55%);
+}
+.container .summary .info__btn {
+  color: hsl(245deg, 75%, 52%);
+  font-weight: 700;
+  text-decoration: underline;
+  transition: all 900ms ease-in-out;
+}
+.container .summary .info__btn:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+.container .summary .info > * {
+  margin: 0 1rem;
+}
+.container .summary .btn {
+  margin: 1.5rem 0;
+}
+.container .summary .btn__primary {
+  font-weight: 700;
+  font-size: 16px;
+  color: hsl(225deg, 100%, 98%);
+  background: hsl(245deg, 75%, 52%);
+  padding: 0.8rem;
+  border-radius: 0.5rem;
+  box-shadow: 0.5rem 0.5rem 3rem rgba(181, 181, 181, 0.783);
+  transition: 900ms ease-in;
+}
+.container .summary .btn__primary:hover {
+  background: #8b82ed;
+  cursor: pointer;
+}
+.container .summary .btn__cancel {
+  margin-top: 1rem;
+  font-weight: 800;
+  color: hsl(224deg, 23%, 55%);
+  transition: all 900ms ease-in;
+}
+.container .summary .btn__cancel:hover {
+  cursor: pointer;
+  color: hsl(223deg, 47%, 23%);
+}
+
+footer {
+  position: absolute;
+  bottom: 1rem;
+  text-align: end;
+  font-size: 11px;
+}
+footer a {
+  color: hsl(228deg, 45%, 44%);
+}
+
+/*# sourceMappingURL=main.css.map */

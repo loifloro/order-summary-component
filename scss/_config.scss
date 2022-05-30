@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+$primary-color-1: hsl(225, 100%, 94%);
+$primary-color-2: hsl(245, 75%, 52%);
+$text-1: hsl(223, 47%, 23%);
+$text-2: hsl(224, 23%, 55%);
+$text-3: hsl(225, 100%, 98%);
+
+$text-paragraph: 16px;
+
+* {
+    font-family: 'Red Hat Display';
+}
