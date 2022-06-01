@@ -1,3 +1,3 @@
 source "http://rubygems.org"
 gem "sass"
-ruby ruby "~>3.1.2"
+ruby "~>3.1.2"

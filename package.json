@@ -111,11 +111,16 @@
     "wrap-ansi": "^7.0.0",
     "xdg-basedir": "^4.0.0",
     "wrappy": "^1.0.2",
-    "yallist": "^4.0.0"
+    "yallist": "^4.0.0",
+    "grunt": "*",
+    "grunt-cli": "*",
+    "grunt-contrib-sass": "*",
+    "grunt-contrib-watch": "*"
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1" ,
+    "postinstall": "grunt sass:production"
   },
   "keywords": [],
   "author": "",
