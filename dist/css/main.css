@@ -96,7 +96,7 @@ a {
   max-width: 350px;
   border-radius: 25px;
   overflow: hidden;
-  background: hsl(225deg, 100%, 98%);
+  background: white;
 }
 @media (min-width: 768px) {
   .card {

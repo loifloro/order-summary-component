@@ -4,7 +4,7 @@
     max-width: 350px;
     border-radius: 25px;
     overflow: hidden;
-    background: $dark-blue;
+    background: white;
 
     @media (min-width: map-get($breakpoints, 'medium')) {
         max-width: 400px;
