@@ -1,0 +1,21 @@
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the home page.
+// -----------------------------------------------------------------------------
+
+@use '../abstracts' as *;
+
+body {
+    display: grid;
+    place-items: center;
+    background: $pale-blue;
+    background-image: url(../assets/images/pattern-background-mobile.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+
+    @media  (min-width: map-get($breakpoints , 'medium')) {
+        // background: a.$primary-color-1;
+        background-image: url(../assets/images/pattern-background-desktop.svg);
+        background-size: 100%; 
+    }
+}

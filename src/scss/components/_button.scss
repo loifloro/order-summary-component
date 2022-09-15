@@ -1,0 +1,50 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the button component.
+// -----------------------------------------------------------------------------
+
+@use '../abstracts' as *;
+
+.btn--change {
+    font-weight: 700;
+    color: $bright-blue;
+    text-decoration: underline;
+    transition: all 900ms ease-in;
+
+    &:hover {
+        cursor: pointer;
+        color: $desaturated-blue;
+        text-decoration: none;
+    }
+}
+
+.btn--proceed {
+    margin-top: 1.5rem;
+    font-weight: 900;
+    color: $dark-blue;
+    background: $bright-blue;
+    border: none;
+    border-radius: .5rem;
+    width: 100% - 14%;
+    box-sizing: border-box;
+    min-height: 50px; 
+    box-shadow: 8px 8px 16px rgba(181, 181, 181, 0.783);
+    transition: all 900ms ease-in;
+
+    &:hover {
+        cursor: pointer;
+        // background: linear-gradient(to right, $desaturated-blue, $bright-blue);
+        background: $desaturated-blue;
+    }
+}
+
+.btn--cancel {
+    color: $desaturated-blue;
+    font-weight: 900;
+    margin: 1.5rem 0 2rem;
+    transition: all 900ms ease-in;
+
+    &:hover {
+        cursor: pointer;
+        color: $very-pale-blue;
+    }
+}

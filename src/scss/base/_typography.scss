@@ -1,0 +1,35 @@
+/**
+ * Basic typography style for copy text
+ */
+
+@use '../abstracts' as *;
+
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+* {
+    font-family: 'Red Hat Display', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+.card {
+    &__title {
+        font-size: 1.5rem;
+        font-weight: 900;
+        color: $very-pale-blue;
+    }
+
+    &__body {
+        font-weight: 500;
+        color: $desaturated-blue;
+    }
+
+    &__plan {
+        font-weight: 700;
+        color: $very-pale-blue;
+    }
+
+    &__price {
+        font-weight: 500;
+        color: $desaturated-blue;
+    }
+}
